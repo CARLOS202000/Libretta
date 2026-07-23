@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Morenita 🤍</title>
+
+    <link rel="stylesheet" href="3.css">
+
+</head>
+
+<body>
+
+    <!-- Partículas -->
+    <div id="particles"></div>
+
+    <!-- Pantalla inicial -->
+    <section id="intro">
+
+        <h2 class="titulo">
+           
+            Dicen que las canciones bonitas...
+        </h2>
+
+        <p class="subtitulo">
+            empiezan con un latido ❤️
+        </p>
+
+        <div id="heart">
+
+            🤍
+
+        </div>
+
+        <p class="toca">
+            Tócame...
+        </p>
+
+        <div id="mensajeRandom"></div>
+
+    </section>
+
+    <!-- Reproductor (oculto al inicio) -->
+
+    <section id="playerSection">
+
+        <div class="music-card">
+
+            <div class="cover">
+
+                <img src="images/Ojitos.png" alt="Portada">
+
+            </div>
+
+            <h1>
+
+                  Morenita 🤍
+
+            </h1>
+
+            <h2>
+
+                  Tu loco 
+
+            </h2>
+
+            <p class="descripcion">
+
+                "Para una gran mujer"
+
+            </p>
+
+            <button id="playPause" class="play-btn">
+
+                ▶
+
+            </button>
+
+            <input
+                type="range"
+                id="progress"
+                value="0"
+                min="0"
+                max="100">
+
+            <div class="time">
+
+                <span id="current">
+
+                    00:00
+
+                </span>
+
+                <span id="duration">
+
+                    00:00
+
+                </span>
+
+            </div>
+
+            <a href="audio/Morenita✨.mp3"
+               class="download"
+               download>
+
+                ⬇ Descargar canción
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Audio -->
+
+    <audio id="myAudio">
+
+        <source src="audio/Morenita✨.mp3"
+                type="audio/mpeg">
+
+    </audio>
+
+    <script src="3.js"></script>
+
+</body>
+
+</html>

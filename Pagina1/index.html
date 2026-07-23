@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤍</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .modal {
+            position: fixed;
+            z-index: 1;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Fondo semitransparente oscuro */
+            padding: 22%;
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            /* Fondo oscuro */
+            padding: 20px;
+            border: 2px solid #ffc107;
+            /* Borde amarillo */
+            color: #fff;
+            /* Texto blanco */
+            text-align: center;
+            max-width: 400px;
+            /* Ancho máximo del modal */
+            border-radius: 10px;
+            /* Bordes redondeados */
+            position: relative;
+            /* Asegura que el contenido modal se pueda posicionar correctamente */
+        }
+
+        .close {
+            color: #ccc;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #ffc107;
+            /* Fondo amarillo */
+            color: #1a1a1a;
+            /* Texto oscuro */
+            border: none;
+            padding: 40px 60px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ffca28;
+            /* Hover amarillo claro */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <button id="playAudio">Tocame Aquí !!</button>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+
+
+
+    <div class="container">
+        <div class="banner">
+            <div class="bg-group">
+                <div class="bg"></div>
+                <div class="bg"></div>
+                <div class="bg">
+                    <h5>🤍</h5>
+                    <h1></h1>
+                </div>
+                <div class="bg"></div>
+                <div class="bg"></div>
+            </div>
+        </div>
+
+        <!-- 0 Section -->
+        <div class="tab tab1">
+            <div class="content">
+                <h5></h5>
+                <h2></h2><br><br><br><br><br><br><br><br><br>
+                <div class="gallery">
+
+                    <p class="texto">Una historia que escribimos los dos en cada capítulo, una mirada donde perderse sin
+                        miedo, sin control, un abismo de emociones, un mar sin fondo, donde la realidad se esfuma con un
+                        solo gesto, los ojos, los tuyos, los míos, protagonistas,  refugios donde
+                        encontramos paz, tranquilidad, incluso en días grises, de estrés, agite, preocupación.
+                    </p>
+<div class="player">
+
+    <h3 class="song-title">🎵 Carlos ✨</h3>
+
+    <button id="playPause" class="play-btn">
+        ⏸
+    </button>
+
+    <input
+        type="range"
+        id="progress"
+        value="0"
+        min="0"
+        max="100">
+
+    <div class="time">
+
+        <span id="current">00:00</span>
+
+        <span id="duration">00:00</span>
+
+    </div>
+
+    <a href="audio/Carlos ✨.mp3" download class="download">
+
+        ⬇ Descargar canción
+
+    </a>
+
+</div>
+
+<audio id="myAudio">
+    <source src="audio/Carlos ✨.mp3">
+</audio>
+
+                </div>
+            </div>
+        </div>
+
+   
+
+    <script src="script.js"></script>
+    </body>
+
+</html>

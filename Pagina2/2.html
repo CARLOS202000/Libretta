@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤍</title>
+
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+
+    <div class="music-card">
+
+        <div class="cover">
+            <img src="images/Ft.png" alt="🤍">
+        </div>
+
+        <h1>🤍</h1>
+
+        <h2>Angie & Carlos </h2>
+
+        <p class="descripcion">
+            "Estar enamorado es muy bonito, y mas si es contigo..."
+        </p>
+
+        <button id="playPause" class="play-btn">
+            ▶
+        </button>
+
+        <input
+            type="range"
+            id="progress"
+            value="0"
+            min="0"
+            max="100">
+
+        <div class="time">
+            <span id="current">00:00</span>
+            <span id="duration">00:00</span>
+        </div>
+
+        <a href="audio/Enamorado.mp3" download class="download">
+            ⬇ Descargar canción
+        </a>
+
+    </div>
+
+    <audio id="myAudio">
+        <source src="audio/Enamorado.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="2.js"></script>
+
+</body>
+
+</html>
