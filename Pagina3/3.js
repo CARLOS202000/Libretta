@@ -95,27 +95,29 @@ heart.addEventListener("click",()=>{
 
     },5200);
 
-    setTimeout(()=>{
+setTimeout(()=>{
 
-        playerSection.classList.add("show");
+    playerSection.classList.add("show");
 
-        playerSection.scrollIntoView({
+    playerSection.scrollIntoView({
 
-            behavior:"smooth",
+        behavior:"smooth",
 
-            block:"center"
+        block:"center"
 
-        });
+    });
 
-        audio.play();
+    // NO reproducir automáticamente
 
-        playPause.innerHTML="⏸";
+    audio.pause();
 
-        cover.style.animationPlayState="running";
+    audio.currentTime = 0;
 
-    },5800);
+    playPause.innerHTML = "▶";
 
-});
+    cover.style.animationPlayState = "paused";
+
+},5800);
 
 /*=========================
 PLAY / PAUSA
