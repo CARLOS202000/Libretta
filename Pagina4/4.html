@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🤍 Un pedacito de mí</title>
+
+<link rel="stylesheet" href="4.css">
+
+</head>
+
+<body>
+
+<!-- Partículas -->
+<div id="particles"></div>
+
+<div class="container">
+
+    <h1 class="titulo">
+        Hay algo que quiero cantarte...
+    </h1>
+
+    <p class="subtitulo">
+        No se reproduce solo.
+        <br>
+        Quiero que seas tú quien decida escuchar este pedacito de mí.
+    </p>
+
+    <!-- Corazón interactivo -->
+    <div id="heartButton" class="heart-container">
+
+        <div class="heart">
+
+            🤍
+
+        </div>
+
+        <span class="text-heart">
+            Tócame
+        </span>
+
+    </div>
+
+    <!-- Reproductor oculto -->
+    <section id="player" class="player oculto">
+
+        <h2 id="songTitle">
+            🎶 Me enamoré de tu sonrisa...
+        </h2>
+
+        <button id="playPause" class="play-btn">
+
+            ▶
+
+        </button>
+
+        <input
+            type="range"
+            id="progress"
+            value="0"
+            min="0"
+            max="100">
+
+        <div class="time">
+
+            <span id="current">
+                00:00
+            </span>
+
+            <span id="duration">
+                00:00
+            </span>
+
+        </div>
+
+        <a href="audio/MeEnamoréDeTuSonrisa✨.mp3" download class="download">
+
+            ⬇ Descargar canción
+
+        </a>
+
+    </section>
+
+</div>
+
+<audio id="myAudio">
+
+    <source src="audio/MeEnamoréDeTuSonrisa✨.mp3">
+
+</audio>
+
+<script src="4.js"></script>
+
+</body>
+
+</html>
