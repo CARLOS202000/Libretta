@@ -349,15 +349,13 @@ IMÁGENES VERTICALES
 
     width:100%;
 
-    max-height:320px;
+    height:320px;
 
-    object-fit:contain;
+    object-fit:cover;
+
+    object-position:top;
 
     display:block;
-
-    margin:auto;
-
-    background:#111;
 
     transition:
     transform .4s ease,
